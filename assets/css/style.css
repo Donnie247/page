@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.justify-content{
+    text-align: justify;
+}
+
+.fontsize-16px__padding816{
+    font-size: 1.6rem;
+    padding: 10px 16px;
+    font-weight: 600;
+}
+
+.open{
+    display: flex !important;   
+}
+
+.row{
+    width: 100%;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+/* HEADER*/
+.header-page{
+    height: auto;
+    padding: 16px 32px;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-page img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header-page .page-name{
+    font-size: 2.4rem;
+    font-weight: 900;   
+    line-height: 1.5;
+    padding: 8px 16px;
+    font-family: 'Caveat', cursive;
+    /* color: var(--white-color); */
+}
+
+.header-page-left{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-page-right{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Caveat', cursive;
+}
+
+.header-page-right p:hover {
+    cursor: pointer;
+    color: pink;
+}
+
+/* SLIDER */
+.slider{
+    height: 573px;
+    background-color: pink;
+    position: relative;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider img{
+    margin-bottom: 30px;
+}
+
+.slider-content{
+    text-align: center;
+}
+
+.slider-content button{
+    margin-top: 15px;
+    border: none;
+    font-size: 1.8rem;
+    background-color: rgb(209, 44, 71);
+    padding: 16px 32px;
+    color: var(--white-color);
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.slider-content button:hover{
+    background-color: rgba(209, 44, 71 ,0.5);
+}
+
+
+/* MODAL */
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.modal header{
+    letter-spacing: 2px;
+}
+
+.modal-container{
+    width: 800px;
+    height: auto;
+    background-color: white;
+    padding: 36px 36px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+}
+
+.modal-header-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-content{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.modal-container i{
+    font-size: 1.8rem;
+    float: right;
+}
+
+.modal-container i:hover{
+    color: pink;
+}
